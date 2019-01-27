@@ -10,18 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DialogActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".StackMainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".StackMainActivity" />
         </activity>
         <activity android:name=".NormalActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".StackMainActivity"
+            android:launchMode="singleInstance">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".StackMainActivity" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".StackMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

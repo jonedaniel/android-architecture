@@ -3,10 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".NormalActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="I`m a normal activity"/>
+        android:text="I`m a normal activity" />
+
+    <Button
+        android:id="@+id/normal_start_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="主页面" />
+
+    <Button
+        android:id="@+id/normal_start_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="对话页面" />
+
 </LinearLayout>
